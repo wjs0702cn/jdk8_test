@@ -41,7 +41,7 @@ public class LambdaTest {
 	public static void lambda1() {
 		List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");
 		// 使用lambda 表达式
-		// 前提 对象已经表示为 @FunctionInterface，这里Comparator接口已经被标记
+		// 前提:对象满足@FunctionalInterface接口，这里Comparator接口已经被标记
 		Collections.sort(names, (String a, String b) -> {
 			return a.compareTo(b);
 		});
