@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Lambda表达式是很多函数式语言的特点,一般被叫做闭包
+ * Lambda表达式是很多函数式语言的特点,一般被叫做闭包,用来执行匿名方法
  * Java的lambda语法
  * http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html#syntax
  *
