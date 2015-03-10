@@ -5,6 +5,12 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Lambda表达式是很多函数式语言的特点,一般被叫做闭包
+ * Java的lambda语法
+ * http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html#syntax
+ *
+ */
 public class LambdaTest {
 	public static void main(String[] args) {
 		System.out.println("---------original----------");
@@ -35,7 +41,7 @@ public class LambdaTest {
 	public static void lambda1() {
 		List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");
 		// 使用lambda 表达式
-		// 前提 对象已经表示为 @FunctionInterface
+		// 前提 对象已经表示为 @FunctionInterface，这里Comparator接口已经被标记
 		Collections.sort(names, (String a, String b) -> {
 			return a.compareTo(b);
 		});
