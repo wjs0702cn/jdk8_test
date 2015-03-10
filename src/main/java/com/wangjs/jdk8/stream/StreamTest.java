@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
  *	
  *	Stream有 Stream 和ParallelStream
  *	ParallelStream使用一个ForkJoinPool来执行并行任务
+ *http://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html
  */
 public class StreamTest {
 	public static void main(String[] args) {
