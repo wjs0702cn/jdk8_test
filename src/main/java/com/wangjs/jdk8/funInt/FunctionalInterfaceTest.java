@@ -5,6 +5,14 @@ package com.wangjs.jdk8.funInt;
  * 1. 只有一个抽象方法。default方法可以随便加
  * @ FunctionInterface 会检查语法正确性，但不要求强制加
  *
+ * jdk8 内置了一些有用的FunctionalInterface 在 java.util.function包中
+ * a) Predicate test(T) 返回一个boolean值
+ * b) Function apply(T) 利用 andThen/compose 可以执行一个链式函数(类似jQuery)
+ * c) Supplier get() 工厂模式的简单实现/无法定制参数 
+ * d) Consumer accept(T) ？ 用途不明 这个接口有的功能在Function中都有
+ * 
+ * 一些老的接口已经被改造
+ * Comparator/Runnable/Callable.....
  */
 public class FunctionalInterfaceTest {
 	public static void main(String[] args) {
